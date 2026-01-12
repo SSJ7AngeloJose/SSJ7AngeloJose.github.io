@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>INVITACION BODA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- PANTALLA DE BIENVENIDA -->
+    <div id="welcomescreen" class="screen">
+        <div id="imagen">
+            <img class="silueta" src="./img/silueta_.png" alt="silueta de pareja">
+        </div>
+        <p class="letra">BIENVENIDOS A LA INVITACIÓN DE</p>
+        <h2>Cristian &amp; fabiola</h2>
+        <hr class="separador-horizontal">
+        <p class="letra">LA MUSICA DE FONDO ES PARTE DE LA EXPERIENCIA</p>
+        <button id="enterbtn">Ingresar</button>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL (oculto al inicio) -->
+    <div id="mainContent" class="screen hidden">
+        <!-- Flores arriba -->
+        <div id="imagen-flores">
+            <img src="./img/flores.png" alt="flores decorativas" class="flores">
+        </div>
+
+        <!-- Sección: Anuncio -->
+        <div class="seccion-texto">
+            <h2>¡Nos Casamos!</h2>
+            <h1>Cristian &amp; Danitza</h1>
+            <p class="fecha">27 · SET · 2025</p>
+        </div>
+
+        <!-- Control de música -->
+        <div class="music-control" id="musicBtn">
+            <i class="fas fa-volume-up"></i>
+        </div>
+
+        <div class="music-progress">
+            <div class="music-progress-bar" id="musicProgressBar"></div>
+        </div>
+
+
+        <!-- Foto de pareja 1 -->
+        <img src="./img/transp-1.png" alt="Foto de pareja" class="foto-pareja" />
+
+        <!-- Sección: Versículo bíblico -->
+        <div class="seccion-texto">
+            <p class="versiculo">Tres cosas durarán para siempre: la fe, la esperanza y el amor; y la mayor de las tres
+                es el amor.</p>
+            <p class="cita-biblica">1 Corintios 13:13</p>
+        </div>
+
+        <!-- Sección: Padres -->
+        <div class="seccion-texto">
+            <h2 class="bendicion">Con la bendición de Dios y nuestros queridos padres</h2>
+
+            <div class="padres">
+                <p class="titulo-padres"><b>Padres de la Novia</b></p>
+                <p class="nombres-padres">Antonio Vega Muñoz </p>
+                <p>Elizabeth Milagros Sosa Chero</p>
+            </div>
+
+            <div class="padres">
+                <p class="titulo-padres"><b>Padres del Novio</b></p>
+                <p class="nombres-padres">Felix Ernesto Zapata Barrera </p>
+                <p>Maria Celeste Villafana Vásquez</p>
+            </div>
+
+            <div class="padrinos">
+                <p class="titulo-padrinos"><b>Y en compañía de nuestros padrinos</b></p>
+                <p class="nombres-padrinos"> Luis Edmundo Verastegui Mena </p>
+                <p>Janeth Luisa Sosa Chero</p>
+            </div>
+        </div>
+
+        <!-- Foto de pareja 2 -->
+        <img src="./img/transp-2.png" alt="Foto de pareja" class="foto-pareja" />
+
+        <!-- Sección: Ceremonia Religiosa -->
+        <div class="seccion-ceremonia">
+            <img src="./img/iglesia.png" alt="Iglesia" class="icono-iglesia" />
+            <h2 class="titulo-ceremonia">Ceremonia Religiosa</h2>
+            <p class="hora">Hora: 12:00 p.m. mediodía</p>
+            <p class="lugar">Lugar: Iglesia Alianza Cristiana y Misionera - Huaral</p>
+
+            <!-- Botón de Google Maps -->
+            <a href="https://maps.google.com/?q=Iglesia+Alianza+Cristiana+y+Misionera+Huaral" target="_blank"
+                rel="noopener" class="btn-maps">
+                <i class="fas fa-map-marker-alt"></i>
+                Ver en Google Maps
+            </a>
+
+            <!-- Sección: Ceremonia recepcion -->
+            <div class="seccion-recepcion">
+                <img src="./img/recepcion.png" alt="recepcion" class="recepcion-img">
+                <h2>Recepción</h2>
+                <p>Hora: 2:00 p.m.</p>
+                <p>Lugar: Fundo Maratuech - Huaral</p>
+
+                <!-- Botón de Google Maps -->
+                <a href="https://maps.google.com/?q=Iglesia+Alianza+Cristiana+y+Misionera+Huaral" target="_blank"
+                    rel="noopener" class="btn-maps">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Ver en Google Maps
+                </a>
+            </div>
+        </div>
+
+        <!-- Foto de pareja 2 -->
+        <img src="./img/transp-3.png" alt="Foto de pareja" class="foto-pareja" />
+
+        <!-- Sección: Codigo vestimenta -->
+        <div class="seccion-vestimenta">
+            <img src="./img/vestimenta.png" alt="recepcion" class="vestimenta-img">
+            <h2>Código de vestimenta</h2>
+            <p>Prepárense para una boda llena de colores, dejen el blanco para la novia</p>
+        </div>
+
+        <!--foto de regalo-->
+
+        <div class="seccion-regalo">
+            <img src="./img/regalo.png" alt="regalo" class="regalo-img">
+            <h2>Regalos</h2>
+            <p>El mejor regalo es que estés presente en este día tan esperado, pero si deseas hacernos un obsequio
+                tenemos estas opciones:</p>
+            <p>N° DE CUENTA</p>
+            <br>
+            <h4>BCP</h4>
+            <p>Cuenta: 37092886504002</p>
+            <p>CCI Interbancaria: 00237019288650400257</p>
+            <br>
+            <h4>BBVA</h4>
+            <p>Cuenta: 0011-0814-0277722262</p>
+            <p>CCI Interbancaria: 01181400027772226217</p>
+            <br>
+            <h4>YAPE/PLIN: 960705440</h4>
+            <p>Titular : Angelo Jose Agurto Laura</p>
+        </div>
+
+        <!---mensaje de buenos deseos---->
+
+        <div class="seccion-deseos">
+            <img src="./img/deseo (1).png" alt="deseos" class="deseos-img">
+            <h2>Buzón de deseos</h2>
+            <p>Nos encantaría leer tus buenos deseos.</p>
+            <p>¡Déjanos un mensaje que recordaremos por siempre!</p>
+            <a class="btn" onclick="abrirModal()">💌 Deja un mensaje</a>
+        </div>
+
+        <div id="modalMensaje" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">×</span>
+
+                <h3 class="modal-title">💌 Mensaje para los novios</h3>
+
+                <input type="text" id="nombre" placeholder="Tu nombre">
+
+                <textarea id="mensaje" placeholder="Escribe tu mensaje..."></textarea>
+
+                <button class="btn" onclick="enviarMensaje()">Enviar</button>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+        <!-- Foto de pareja 3 -->
+        <img src="./img/transp-3.png" alt="Foto de pareja" class="foto-pareja" />
+
+        <!--confirmar asistencia-->
+        <div class="seccion-asistencia">
+            <img src="./img/calendario.png" alt="calendario" class="calendario">
+            <h2>Confirmar asistencia</h2>
+            <p>Tu presencia es muy importante para nosotros, por favor confirmanos tu asistencia mediante este enlace
+            </p>
+            <a class="btn-asistencia"
+                href="https://web.whatsapp.com/send?phone=960705440&text=Hola%20Julio%20y%20Heydi,%20confirmo%20mi%20asistencia%20a%20su%20boda."
+                target="_blank">
+                💬 Confirmar por WhatsApp
+            </a>
+        </div>
+
+        <div class="seccion-comentario">
+            <img src="img/iniciales.png" alt="iniciales" class="iniciales">
+            <p>Con mucha ilusión queremos vivir este momento rodeados de personas que han formado parte de nuestras
+                historia. Será un honor contar con tu presencia.</p>
+            <br>
+            <p>¡TE ESPERAMOS!</p>
+
+        </div>
+    </div>
+
+ 
+
+    <!-- Audio de fondo -->
+    <audio id="bgMusic" loop>
+       <source src="./thinking-out-loud.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

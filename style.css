@@ -1,0 +1,414 @@
+/*pagina bienvenida*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: rgba(236, 226, 212, 0.834);
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 2px;
+    color: #5F682F;
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #5F682F;
+    font-size: 2rem;
+    margin: 10px 0;
+    font-family: 'Great Vibes', cursive;
+}
+
+img {
+    width: 180px;
+    height: 187.78px;
+
+}
+
+.silueta {
+    border-radius: 10px;
+    border: 2px solid #5F682F;
+    box-shadow: 0 8px 25px rgba(71, 65, 65, 0.15);
+
+}
+
+.separador-horizontal {
+    width: 240px;
+    height: 2px;
+    border: none;
+    background-color: #959090;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 17px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.letra {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(45, 49, 49);
+}
+
+.versiculo {
+    font-style: italic;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.cita-biblica {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+
+/* Ocultar elementos de la informacion */
+.hidden {
+    display: none !important;
+}
+
+#enterbtn {
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 14px;
+    cursor: pointer;
+    background: #9ba273;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    transition: background 0.6s ease;
+}
+
+#enterbtn:hover {
+    background: #819538;
+}
+
+
+/* informacion */
+.fecha {
+    color: #5F682F;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+
+
+/* TARJETA BLANCA - OCUPA TODA LA PANTALLA */
+#mainContent {
+    position: relative;
+    background-color: white;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+    min-height: 100vh;
+}
+
+/* Para pantallas más grandes */
+@media (min-width: 768px) {
+    #mainContent {
+        border-radius: 15px;
+        margin: 20px;
+        min-height: auto;
+    }
+}
+
+/* Control de música */
+.music-control {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background: #666765;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.music-control:hover {
+    transform: scale(1.1);
+    background: #7a8a5a;
+}
+
+.music-control.muted {
+    opacity: 0.5;
+}
+
+/* Foto de pareja */
+.foto-pareja {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Imagen de flores - DENTRO del contenido blanco */
+#imagen-flores {
+    position: relative;
+}
+
+.flores {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.icono-iglesia {
+    max-width: 100px;
+    height: auto;
+    margin-top: 15px;
+}
+
+/* Sección Ceremonia */
+.seccion-ceremonia {
+    padding: 15px;
+}
+
+
+/* Botón de Google Maps */
+.btn-maps {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 6px;
+    background-color: #e8f0e3;
+    color: #5F682F;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-maps:hover {
+    background-color: #5F682F;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(95, 104, 47, 0.3);
+}
+
+.btn-maps i {
+    font-size: 1.2rem;
+}
+
+/* Sección recepcion */
+.seccion-recepcion {
+    padding: 50px;
+}
+
+.recepcion-img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Sección vestimenta */
+.seccion-vestimenta {
+    padding: 50px;
+}
+
+.vestimenta-img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/*Seccion regalo*/
+.seccion-regalo {
+    padding: 50px;
+}
+
+.regalo-img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/*Seccion deseos*/
+.seccion-deseos {
+    padding: 50px;
+}
+
+.deseos-img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/*boton de deseos*/
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 6px;
+    background-color: #e8f0e3;
+    color: #5F682F;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #5F682F;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+/* -------- MODAL MENSAJES -------- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background: #fff;
+    max-width: 320px;
+    margin: 15% auto;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    animation: fadeUp 0.5s ease;
+}
+
+.modal-title {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+    color: var(--verde);
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+.modal-content textarea {
+    resize: none;
+    height: 90px;
+}
+
+.close {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+    color: #999;
+}
+
+.seccion-asistencia {
+    padding: 50px;
+}
+
+.calendario {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Botón de Google Maps */
+.btn-asistencia {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 6px;
+    background-color: #e8f0e3;
+    color: #5F682F;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-asistencia:hover {
+    background-color: #5F682F;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.seccion-comentario {
+    padding: 50px;
+}
+
+.iniciales {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+.music-progress {
+
+    bottom: 15px;
+    left: 30px;
+    width: 160px;
+    height: 6px;
+    background: rgba(52, 136, 37, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.music-progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #5F682F;
+    border-radius: 10px;
+    transition: width 0.2s linear;
+}
