@@ -391,6 +391,9 @@ p {
     max-width: 100px;
     height: auto;
     margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 12px rgba(95, 104, 47, 0.3);
 }
 
 
