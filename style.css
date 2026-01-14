@@ -5,19 +5,47 @@
     box-sizing: border-box;
 }
 #welcomescreen {
-    background-image: url('./img/flores.png');
+    background-image: url('./img/img5.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;        /* ← Cambia vw por % */
+    width: 100%;
     height: 100vh;
-    min-height: 100vh;  /* ← Agrega esto */
+    min-height: 100vh;
     position: fixed;
-    display: flex;      /* ← Agrega esto para centrar */
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+#welcomescreen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(95, 79, 79, 0.3); /* Blanco semi-transparente */
+    backdrop-filter: blur(7px); /* Difumina el fondo */
+    z-index: 1;
+}
+
+#welcomescreen > * {
+    position: relative;
+    z-index: 2;
+}
+
+#welcomescreen h2,
+#welcomescreen .letra {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Sombra oscura en el texto */
+    color: rgb(255, 255, 255); /* Asegúrate que el texto sea blanco */
+}
+
+#welcomescreen #enterbtn {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra al botón */
+}
+
  
 body {
     background-color: rgba(255, 255, 255, 0.834);
