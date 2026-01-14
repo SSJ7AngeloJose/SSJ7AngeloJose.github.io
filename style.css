@@ -4,8 +4,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
+#welcomescreen {
+    background-image: url('./img/flores.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;        /* ← Cambia vw por % */
+    height: 100vh;
+    min-height: 100vh;  /* ← Agrega esto */
+    position: fixed;
+    display: flex;      /* ← Agrega esto para centrar */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
 body {
     background-color: rgba(255, 255, 255, 0.834);
     font-family: 'Playfair Display', serif;
